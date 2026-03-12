@@ -1,0 +1,84 @@
+{
+    "app": {
+        "title": "English Learning Roadmap",
+        "tagline": "A1からC2まで、英語スキルの進捗を追跡しよう"
+    },
+    "nav": {
+        "map": "マップ",
+        "dashboard": "ダッシュボード",
+        "badges": "バッジ",
+        "settings": "設定"
+    },
+    "categories": {
+        "vocabulary": "語彙",
+        "grammar": "文法",
+        "pronunciation": "発音",
+        "reading": "リーディング",
+        "writing": "ライティング",
+        "listening": "リスニング",
+        "speaking": "スピーキング"
+    },
+    "worldMap": {
+        "title": "ワールドマップ",
+        "verified": "{{count}} 検証済み",
+        "selfReported": "{{count}} 自己申告",
+        "progress": "{{percent}}%"
+    },
+    "skillMap": {
+        "title": "スキルマップ",
+        "locked": "ロック中",
+        "unlocked": "解放済み",
+        "selfReported": "自己申告",
+        "verified": "検証済み",
+        "gold": "ゴールド",
+        "markDone": "完了にする",
+        "startQuiz": "クイズを始める"
+    },
+    "quiz": {
+        "question": "問題 {{current}}/{{total}}",
+        "correct": "正解！",
+        "incorrect": "不正解",
+        "skip": "スキップ",
+        "submit": "回答",
+        "passed": "合格！",
+        "failed": "もう少し頑張ろう！",
+        "score": "スコア: {{score}}%",
+        "xpEarned": "+{{xp}} XP"
+    },
+    "dashboard": {
+        "title": "ダッシュボード",
+        "totalXp": "合計XP",
+        "currentStreak": "{{days}}日連続",
+        "longestStreak": "最長: {{days}}日",
+        "skillBalance": "スキルバランス",
+        "selfReported": "自己申告",
+        "verified": "検証済み"
+    },
+    "badges": {
+        "title": "バッジ",
+        "earned": "獲得済み",
+        "locked": "???",
+        "earnedAt": "{{date}}に獲得"
+    },
+    "settings": {
+        "title": "設定",
+        "language": "言語",
+        "theme": "テーマ",
+        "dark": "ダーク",
+        "light": "ライト",
+        "data": "データ管理",
+        "export": "バックアップをエクスポート",
+        "import": "バックアップをインポート",
+        "exportDesc": "進捗データをJSONファイルとしてダウンロード",
+        "importDesc": "バックアップファイルから進捗を復元",
+        "warning": "進捗はこのブラウザにのみ保存されます。データ損失を防ぐため、定期的にエクスポートしてください。",
+        "importFailed": "インポートに失敗しました。ファイル形式が無効です。",
+        "importConfirm": "現在の進捗が上書きされます。続行しますか？"
+    },
+    "placement": {
+        "title": "レベル判定クイズ",
+        "description": "クイズに答えて、スタートレベルを設定しよう",
+        "start": "クイズを始める",
+        "skip": "スキップしてA1から開始"
+    }
+}

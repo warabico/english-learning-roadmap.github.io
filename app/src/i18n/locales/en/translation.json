@@ -1,0 +1,84 @@
+{
+    "app": {
+        "title": "English Learning Roadmap",
+        "tagline": "Track your English skills from A1 to C2"
+    },
+    "nav": {
+        "map": "Map",
+        "dashboard": "Dashboard",
+        "badges": "Badges",
+        "settings": "Settings"
+    },
+    "categories": {
+        "vocabulary": "Vocabulary",
+        "grammar": "Grammar",
+        "pronunciation": "Pronunciation",
+        "reading": "Reading",
+        "writing": "Writing",
+        "listening": "Listening",
+        "speaking": "Speaking"
+    },
+    "worldMap": {
+        "title": "World Map",
+        "verified": "{{count}} verified",
+        "selfReported": "{{count}} self-reported",
+        "progress": "{{percent}}%"
+    },
+    "skillMap": {
+        "title": "Skill Map",
+        "locked": "Locked",
+        "unlocked": "Unlocked",
+        "selfReported": "Self-Reported",
+        "verified": "Verified",
+        "gold": "Gold",
+        "markDone": "Mark as Done",
+        "startQuiz": "Start Quiz"
+    },
+    "quiz": {
+        "question": "Question {{current}}/{{total}}",
+        "correct": "Correct!",
+        "incorrect": "Incorrect",
+        "skip": "Skip",
+        "submit": "Answer",
+        "passed": "Passed!",
+        "failed": "Keep practicing!",
+        "score": "Score: {{score}}%",
+        "xpEarned": "+{{xp}} XP"
+    },
+    "dashboard": {
+        "title": "Dashboard",
+        "totalXp": "Total XP",
+        "currentStreak": "{{days}} day streak",
+        "longestStreak": "Longest: {{days}} days",
+        "skillBalance": "Skill Balance",
+        "selfReported": "Self-Reported",
+        "verified": "Verified"
+    },
+    "badges": {
+        "title": "Badges",
+        "earned": "Earned",
+        "locked": "???",
+        "earnedAt": "Earned {{date}}"
+    },
+    "settings": {
+        "title": "Settings",
+        "language": "Language",
+        "theme": "Theme",
+        "dark": "Dark",
+        "light": "Light",
+        "data": "Data Management",
+        "export": "Export Backup",
+        "import": "Import Backup",
+        "exportDesc": "Download your progress as a JSON file",
+        "importDesc": "Restore progress from a backup file",
+        "warning": "Progress is saved in this browser only. Export regularly to avoid data loss.",
+        "importFailed": "Import failed. Invalid file format.",
+        "importConfirm": "This will overwrite your current progress. Continue?"
+    },
+    "placement": {
+        "title": "Placement Quiz",
+        "description": "Take a quick quiz to set your starting level",
+        "start": "Start Quiz",
+        "skip": "Skip, start from A1"
+    }
+}
