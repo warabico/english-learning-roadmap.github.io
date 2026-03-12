@@ -31,6 +31,3 @@ vite.config.ts.timestamp-*
 
 # Claude
 .claude/*
-
-# GitHub
-.github/*
