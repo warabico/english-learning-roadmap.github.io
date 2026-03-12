@@ -5,12 +5,13 @@
 | Layer            | Choice                | Reason                                             |
 |------------------|-----------------------|----------------------------------------------------|
 | UI Framework     | React 18 + TypeScript | Component-based, type-safe                         |
-| Styling          | Tailwind CSS v4       | Utility-first, game UI friendly                    |
+| Styling          | Tailwind CSS v4       | Utility-first, mobile-first friendly               |
 | Build Tool       | Vite                  | Fast dev server, easy GitHub Pages config          |
 | State Management | Zustand               | Minimal boilerplate, easy localStorage persistence |
 | Animations       | Framer Motion         | Declarative, React-native animation library        |
 | Charts           | Recharts              | Radar chart, React-native charting library         |
 | Icons            | Lucide React          | Clean, tree-shakeable icon set                     |
+| i18n             | i18next + react-i18next | De-facto standard, JSON resource files, hook API |
 | Deployment       | GitHub Actions        | Auto-deploy on push to main                        |
 
 ---
@@ -23,6 +24,7 @@
 npm install react react-dom
 npm install tailwindcss @tailwindcss/vite
 npm install framer-motion recharts lucide-react zustand
+npm install i18next react-i18next
 ```
 
 ### Development
@@ -73,6 +75,13 @@ english-learning-roadmap.github.io/
 │   │   └── progressStore.ts        # Zustand global state
 │   ├── types/
 │   │   └── index.ts                # All TypeScript type definitions
+│   ├── i18n/
+│   │   ├── index.ts                # i18next initialization
+│   │   └── locales/
+│   │       ├── en/
+│   │       │   └── translation.json  # English strings
+│   │       └── ja/
+│   │           └── translation.json  # Japanese strings
 │   ├── utils/
 │   │   ├── xp.ts                   # XP calculation helpers
 │   │   ├── progress.ts             # Progress aggregation functions

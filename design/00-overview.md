@@ -60,5 +60,6 @@ Map  |  Dashboard  |  Badges  |  Settings
 | [02-gamification.md](./02-gamification.md)  | XP, streaks, badges, progression rules     |
 | [03-data-model.md](./03-data-model.md)      | TypeScript types, localStorage, export     |
 | [04-tech-stack.md](./04-tech-stack.md)      | Framework, libraries, project structure    |
-| [05-ui-ux.md](./05-ui-ux.md)                | Colors, typography, animations, responsive |
+| [05-ui-ux.md](./05-ui-ux.md)                | Colors, typography, animations, mobile-first responsive |
 | [06-deployment.md](./06-deployment.md)      | GitHub Actions, Pages configuration        |
+| [07-i18n.md](./07-i18n.md)                  | i18next setup, language resources (EN/JA)  |

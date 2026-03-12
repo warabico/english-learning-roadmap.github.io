@@ -160,19 +160,40 @@ Fixed bottom navigation bar with 4 tabs:
 
 ---
 
+## Mobile-First Design Policy
+
+**設計はモバイルを基準とし、上位ブレークポイントで拡張する。**
+
+- Tailwind のクラスはプレフィックスなし（= モバイル）を基本とし、`md:` / `lg:` で上書き
+- 全コンポーネントはモバイルで完全に動作することを前提に設計する
+- PC固有のレイアウト（サイドバー等）は `lg:` 以上で追加する拡張として扱う
+
+### モバイルとPCでの主な UI 差分
+
+| 要素             | Mobile (default)                  | Desktop (lg:)                      |
+|------------------|-----------------------------------|------------------------------------|
+| ナビゲーション   | 固定ボトムバー                    | 左サイドバー                       |
+| World Map        | 1カラムカード縦並び               | 2カラムグリッド                    |
+| Skill Map        | 全画面ヘックスツリー、ピンチ操作  | 余白あり、マウスホイールズーム     |
+| Quiz モーダル    | フルスクリーン                    | 中央配置オーバーレイ               |
+| Dashboard        | 縦スクロール1カラム               | 2カラム（チャート左・統計右）      |
+
+---
+
 ## Responsive Layout
 
 ```
-Mobile  (< 768px)  : Single column cards, compact hex tree, full-width modals
-Tablet  (768px+)   : 2-column cards, full hex tree, centered modals
-Desktop (1024px+)  : Sidebar nav + main content area, larger hex nodes
+Mobile  (< 768px)  : ボトムナビ、1カラム、フルスクリーンモーダル  ← 設計基準
+Tablet  (768px+)   : 2カラムカード、中央寄せモーダル
+Desktop (1024px+)  : サイドバーナビ、広いヘックスツリー
 ```
 
 ### Breakpoints (Tailwind default)
 
-| Name | Min Width | Layout Change                     |
-|------|-----------|-----------------------------------|
-| sm   | 640px     | Minor padding adjustments         |
-| md   | 768px     | 2-column card grid, wider modals  |
-| lg   | 1024px    | Sidebar navigation appears        |
-| xl   | 1280px    | Max content width applied         |
+| Name | Min Width | Layout Change                              |
+|------|-----------|--------------------------------------------|
+| (無) | 0px~      | モバイル基準レイアウト（設計の出発点）     |
+| sm   | 640px     | 細かいパディング・フォントサイズ調整       |
+| md   | 768px     | 2カラムカードグリッド、モーダル幅拡張      |
+| lg   | 1024px    | サイドバーナビ表示、ボトムバー非表示       |
+| xl   | 1280px    | コンテンツ最大幅制限適用                   |
