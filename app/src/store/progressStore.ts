@@ -104,9 +104,7 @@ export const useProgressStore = create<ProgressState>()(
                     const existing = state.progress[nodeId];
 
                     // Don't downgrade if already verified
-                    if (
-                        existing?.status === "verified"
-                    ) {
+                    if (existing?.status === "verified") {
                         return state;
                     }
 
@@ -148,7 +146,7 @@ export const useProgressStore = create<ProgressState>()(
                         status = "verified";
                     }
 
-                    let xpGain = XP_RULES.quizAttempt;
+                    let xpGain: number = XP_RULES.quizAttempt;
                     if (score >= 90) {
                         xpGain = XP_RULES.quizPass90;
                     } else if (score >= 70) {
@@ -159,7 +157,10 @@ export const useProgressStore = create<ProgressState>()(
                         nodeId,
                         status,
                         selfReportedAt: existing?.selfReportedAt ?? null,
-                        quizPassedAt: score >= 70 ? now : (existing?.quizPassedAt ?? null),
+                        quizPassedAt:
+                            score >= 70
+                                ? now
+                                : (existing?.quizPassedAt ?? null),
                         bestScore,
                         attempts,
                     };
