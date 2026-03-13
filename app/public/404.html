@@ -3,31 +3,14 @@
     <head>
         <meta charset="utf-8" />
         <title>English Learning Roadmap</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <script>
-            // SPA redirect for GitHub Pages
-            // Converts path to query string so index.html can handle routing
-            var pathSegmentsToKeep = 1;
-            var l = window.location;
-            l.replace(
-                l.protocol +
-                    "//" +
-                    l.hostname +
-                    (l.port ? ":" + l.port : "") +
-                    l.pathname
-                        .split("/")
-                        .slice(0, 1 + pathSegmentsToKeep)
-                        .join("/") +
-                    "/?/" +
-                    l.pathname
-                        .slice(1)
-                        .split("/")
-                        .slice(pathSegmentsToKeep)
-                        .join("/")
-                        .replace(/&/g, "~and~") +
-                    (l.search ? "&" + l.search.slice(1).replace(/&/g, "~and~") : "") +
-                    l.hash,
-            );
+            // HashRouter handles all routing via hash
+            // This page should not be reached in normal usage
+            window.location.href = "/english-learning-roadmap.github.io/";
         </script>
     </head>
-    <body></body>
+    <body>
+        <p>Redirecting to English Learning Roadmap...</p>
+    </body>
 </html>
